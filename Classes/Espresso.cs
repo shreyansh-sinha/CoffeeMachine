@@ -8,9 +8,9 @@ namespace CoffeeMachine.Classes
 {
     public class Espresso : Beverage
     {
-        public Espresso() : base("This is Espresso Coffee")
+        public Espresso()
         {
-
+            description = "This is Espresso Coffee";
         }
 
         public override int Cost()

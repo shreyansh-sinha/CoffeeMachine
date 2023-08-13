@@ -8,9 +8,9 @@ namespace CoffeeMachine.Classes
 {
     public class HouseBlend : Beverage
     {
-        public HouseBlend() : base("This is House Blend Coffee")
+        public HouseBlend() 
         {
-
+            description = "This is House Blend Coffee";
         }
         public override int Cost()
         {

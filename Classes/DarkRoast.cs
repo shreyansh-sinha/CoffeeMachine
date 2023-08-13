@@ -8,7 +8,10 @@ namespace CoffeeMachine.Classes
 {
     public class DarkRoast : Beverage
     {
-        public DarkRoast() : base("This is Dark Roast Coffee") { }
+        public DarkRoast()
+        {
+            description = "This is Dark Roast Coffee";
+        }
         public override int Cost()
         {
             return 60;

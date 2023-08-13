@@ -8,7 +8,10 @@ namespace CoffeeMachine.Classes
 {
     public class Decaf : Beverage
     {
-        public Decaf() : base("This is Decaf coffee") { }
+        public Decaf() 
+        {
+            description = "This is Decaf coffee";
+        }
         public override int Cost()
         {
             return 100;
