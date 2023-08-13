@@ -9,11 +9,14 @@ namespace CoffeeMachine.Decorators
 {
     public class MochaDecorator : BaseDecorator
     {
-        private readonly Beverage beverage;
-
         public MochaDecorator(Beverage beverage)
         {
             this.beverage = beverage;
+        }
+
+        public override string getDescription()
+        {
+            return beverage.getDescription() + "Mocha";
         }
 
         public override int Cost()
