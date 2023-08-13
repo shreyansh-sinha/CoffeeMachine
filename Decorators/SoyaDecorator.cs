@@ -21,7 +21,24 @@ namespace CoffeeMachine.Decorators
 
         public override int Cost()
         {
-            return beverage.Cost() + 40;
+            Size size = beverage.getSize();
+            int cost = beverage.Cost();
+            switch (size)
+            {
+                case Size.TALL:
+                    cost = cost + 10;
+                    break;
+                case Size.GRANDE:
+                    cost = cost + 20;
+                    break;
+                case Size.VENTI:
+                    cost = cost + 30;
+                    break;
+                default:
+                    cost = cost + 10;
+                    break;
+            }
+            return cost;
         }
     }
 }
